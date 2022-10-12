@@ -8,6 +8,12 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-prettier",
   ],
+  "prettier/prettier": [
+    "error",
+    {
+      endOfLine: "auto",
+    },
+  ],
   overrides: [
     {
       files: ["cypress/e2e/**.{cy,spec}.{js,ts,jsx,tsx}"],
@@ -20,4 +26,7 @@ module.exports = {
   env: {
     node: true,
   },
+  // rules: {
+  //   "vue/multi-word-component-names": "off",
+  // },
 };
